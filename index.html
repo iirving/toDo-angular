@@ -1,19 +1,21 @@
 <!doctype html>
 <html ng-app>
 <head>
-  <title></title>
+  <title>toDo</title>
 
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
 <script src="http://cdn.jsdelivr.net/underscorejs/1.4.3/underscore-min.js"></script>
 <script src="todo.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="todo.css">
-
 </head>
-<body>
 
+<body class="container">
+<h1>toDo</h1>
 <div ng-controller="TodoCtrl">
-  <h2>Total Todos: {{getTotalTodos()}}</h2>
-  <ul class="unstyled">
+  <h3>Total Todos: {{getTotalTodos()}}</h3>
+  <ul class="list-unstyled">
     <li ng-repeat="todo in todos">
             <input type="checkbox" ng-model="todo.done">
             <span class="done-{{todo.done}}">{{todo.text}}</span>
@@ -24,10 +26,14 @@
   <input type="text" ng-model="formTodoText" ng-model-instant>
   {{formTodoText}}
 
-<button class="btn" ng-click="addTodo()">Add New Todo</button>
+  <button class="btn" ng-click="addTodo()"><span class="glyphicon glyphicon-plus"></span>Add New Todo</button>
 
 </form>
-<button class="btn" ng-click="removeCompleted()">Remove Completed</button>
+<BR>
+<div>
+  <button class="btn-lg" ng-click="removeCompleted()"><span class="glyphicon glyphicon-trash"></span>Remove Completed</button>
+</div>
+
 </div>
 
 </body>
