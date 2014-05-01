@@ -12,4 +12,4 @@ angular.js; underscore.js and bootstrap.css are not local but pointing at CDN's
 TO DO (ironic?)
 ---------------
 - ~~no styling~~
-- no persistence (not local or backend)
+- no persistence (not local or backend storage)
