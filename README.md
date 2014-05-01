@@ -1,4 +1,9 @@
 toDo-angular
 ======================
 
-a simple to do app built with AngularJS
+a simple ToDo web page built with AngularJS
+
+TO DO (ironic?)
+==================
+- no styling
+- no persistence (not local or backend)
