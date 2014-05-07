@@ -16,5 +16,5 @@ angular.js; underscore.js and bootstrap.css are not local but pointing at CDN's
 
 ### Demo
 
-since this is a  simplae app, I've got a version hosted on dropbox
-[DEMO](https://dl.dropboxusercontent.com/u/3967166/ng/todo1/index.html)
+since this is a simple static app (static in the sense that it is *just* html, css, and javascript) , I've got a [DEMO](https://dl.dropboxusercontent.com/u/3967166/ng/todo1/index.html) version hosted on dropbox.
+
